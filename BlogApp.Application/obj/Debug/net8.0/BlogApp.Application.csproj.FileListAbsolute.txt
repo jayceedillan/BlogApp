@@ -1,0 +1,17 @@
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\BlogApp.Application.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\BlogApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\BlogApp.Application.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\BlogApp.Application.AssemblyInfo.cs
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\BlogApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\bin\Debug\net8.0\BlogApp.Application.deps.json
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\bin\Debug\net8.0\BlogApp.Application.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\bin\Debug\net8.0\BlogApp.Application.pdb
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\bin\Debug\net8.0\BlogApp.Core.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\bin\Debug\net8.0\BlogApp.Dto.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\bin\Debug\net8.0\BlogApp.Core.pdb
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\bin\Debug\net8.0\BlogApp.Dto.pdb
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\BlogApp..92E926E3.Up2Date
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\BlogApp.Application.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\refint\BlogApp.Application.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\BlogApp.Application.pdb
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Application\obj\Debug\net8.0\ref\BlogApp.Application.dll

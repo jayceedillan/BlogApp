@@ -1,0 +1,93 @@
+﻿@using BlogApp.Dto.User
+@model IEnumerable<UserDto>
+
+<div class="container-fluid">
+    <h1 class="h3 mb-2 text-gray-800">User Management</h1>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h6 class="m-0 font-weight-bold text-primary">Users</h6>
+                <a asp-action="Create" class="btn btn-primary btn-sm">
+                    <i class="fas fa-plus"></i> Add New User
+                </a>
+            </div>
+        </div>
+        <div class="card-body">
+            @if (TempData["Error"] != null)
+            {
+                <ul class="text-danger">
+                    <li>@TempData["Error"]</li>
+                </ul>
+            }
+            <div class="table-responsive">
+                <table class="table table-bordered" id="usersTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Roles</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+                                <td>@user.UserName</td>
+                                <td>@user.Email</td>
+                                <td>
+                                    @if (user.Roles != null && user.Roles.Any())
+                                    {
+                                        @foreach (var role in user.Roles)
+                                        {
+                                            <span class="badge badge-primary">@role</span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">No roles assigned</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-warning btn-sm">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <button type="button" class="btn btn-danger btn-sm"
+                                            data-toggle="modal"
+                                            data-target="#deleteModal"
+                                            data-userid="@user.Id"
+                                            data-username="@user.UserName">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Modal -->
+@foreach (var user in Model)
+{
+    @await Html.PartialAsync("DeleteModalPartial", user.UserName)
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#deleteModal').on('show.bs.modal', function (event) {
+               
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                var userId = button.data('userid');  // Extract user ID
+                var userName = button.data('username'); // Extract user name
+                var modal = $(this);
+              
+                modal.find('#userId').val(userId);  // Set the user ID in the hidden input
+                modal.find('#userName').text(userName);  // Set the user name in the modal body
+            });
+        });
+    </script>
+}

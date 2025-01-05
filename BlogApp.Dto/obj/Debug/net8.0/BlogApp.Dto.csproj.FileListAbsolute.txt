@@ -1,0 +1,12 @@
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\bin\Debug\net8.0\BlogApp.Dto.deps.json
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\bin\Debug\net8.0\BlogApp.Dto.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\bin\Debug\net8.0\BlogApp.Dto.pdb
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.AssemblyInfo.cs
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\refint\BlogApp.Dto.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.pdb
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\ref\BlogApp.Dto.dll
