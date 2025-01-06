@@ -1,7 +1,8 @@
-﻿using BlogApp.Application.DTOs;
+﻿
 using BlogApp.Core.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using BlogApp.Core.Entities;
+using BlogApp.Dto.Login;
 
 namespace BlogApp.Application.Services
 {

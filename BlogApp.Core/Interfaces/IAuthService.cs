@@ -1,4 +1,6 @@
-﻿using BlogApp.Application.DTOs;
+﻿
+
+using BlogApp.Dto.Login;
 
 namespace BlogApp.Core.Interfaces
 {

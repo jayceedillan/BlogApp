@@ -183,3 +183,4 @@ C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.pdb
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.genruntimeconfig.cache
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\ref\BlogApp.Web.dll
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.MvcApplicationPartsAssemblyInfo.cs
