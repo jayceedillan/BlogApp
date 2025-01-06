@@ -6,17 +6,16 @@ namespace BlogApp.Application.Helper
     {
         public static IFormFile ConvertToIFormFile(string filePath)
         {
-            // Ensure the file exists
             if (!File.Exists(filePath))
             {
                 throw new FileNotFoundException("File not found at the specified path.", filePath);
             }
 
-            // Read the file into a stream
+         
             var fileBytes = File.ReadAllBytes(filePath);
             var stream = new MemoryStream(fileBytes);
 
-            // Create an IFormFile using the MemoryStream
+           
             var formFile = new FormFile(stream, 0, fileBytes.Length, "file", Path.GetFileName(filePath))
             {
                 Headers = new HeaderDictionary(),

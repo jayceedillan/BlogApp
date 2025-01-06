@@ -7,6 +7,7 @@ using BlogApp.Dto.Blog;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Security.Claims;
 
 namespace BlogApp.Web.Controllers
@@ -94,7 +95,7 @@ namespace BlogApp.Web.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, "An unexpected error occurred. Please try again.");
+                ModelState.AddModelError(string.Empty, ex.Message);
                 return View(model);
             }
         }
@@ -127,7 +128,7 @@ namespace BlogApp.Web.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, "An unexpected error occurred. Please try again.");
+                ModelState.AddModelError(string.Empty, ex.Message);
                 return View(model);
             }
         }
