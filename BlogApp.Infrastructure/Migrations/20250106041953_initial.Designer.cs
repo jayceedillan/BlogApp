@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogApp.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250106014418_initial")]
+    [Migration("20250106041953_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -92,9 +92,8 @@ namespace BlogApp.Infrastructure.Migrations
 
             modelBuilder.Entity("BlogApp.Core.Entities.BlogPost", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("AuthorId")
                         .IsRequired()

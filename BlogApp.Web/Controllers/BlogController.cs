@@ -1,9 +1,13 @@
 ﻿using BlogApp.Application.Blogs.Commands.CreateBlog;
+using BlogApp.Application.Blogs.Commands.DeleteBlog;
+using BlogApp.Application.Blogs.Commands.UpdateBlog;
 using BlogApp.Application.Blogs.Queries;
 using BlogApp.Application.Services;
+using BlogApp.Dto.Blog;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace BlogApp.Web.Controllers
 {
@@ -12,19 +16,33 @@ namespace BlogApp.Web.Controllers
     {
         private readonly IMediator _mediator;
         private readonly IFileService _fileService;
-
-        public BlogController(IMediator mediator, IFileService fileService)
+        private readonly string _currentUserId;
+        public BlogController(IMediator mediator, IFileService fileService, IHttpContextAccessor httpContextAccessor)
         {
             _mediator = mediator;
             _fileService = fileService;
+            _currentUserId = GetAuthenticatedUserId(httpContextAccessor) ?? string.Empty;
         }
 
         // Display all blog posts for the current user
         public async Task<IActionResult> Index()
         {
-            var userId = User.Identity.Name;  // Assuming the username is used as a unique identifier
-            var blogs = await _mediator.Send(new GetBlogsByUserQuery(userId));
+            var blogs = await _mediator.Send(new GetBlogsByUserQuery(_currentUserId));
             return View(blogs);
+        }
+
+        private string? GetAuthenticatedUserId(IHttpContextAccessor httpContextAccessor)
+        {
+            var user = httpContextAccessor.HttpContext?.User;
+
+           
+            if (user != null && user.Identity?.IsAuthenticated == true)
+            {
+                var userId = user.FindFirstValue(ClaimTypes.NameIdentifier);
+                return userId;
+            }
+
+            return null;
         }
 
         // Display a specific blog post by ID for editing
@@ -35,6 +53,7 @@ namespace BlogApp.Web.Controllers
             {
                 return NotFound();
             }
+            
             return View(blog);
         }
 
@@ -48,14 +67,42 @@ namespace BlogApp.Web.Controllers
         // Handle the creation of a blog post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(CreateBlogCommand createBlogCommand)
+        public async Task<IActionResult> Create(BlogPostDto model, IFormFile? bannerImage)
         {
             if (ModelState.IsValid)
             {
-                var newBlog = await _mediator.Send(createBlogCommand);
-                return RedirectToAction(nameof(Index));  // Redirect to the index view after creating
+                
+                if (bannerImage != null && bannerImage.Length > 0)
+                {
+                    model.ImagePath = bannerImage;
+                }
+               
+
+                model.AuthorId = _currentUserId;
+
+                var newBlog = await _mediator.Send(new CreateBlogCommand { blogPostDto = model});
+                return RedirectToAction(nameof(Index)); 
             }
-            return View(createBlogCommand);
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(BlogPostDto model, IFormFile? bannerImage)
+        {
+            if (ModelState.IsValid)
+            {
+                if (bannerImage != null && bannerImage.Length > 0)
+                {
+                    model.ImagePath = bannerImage;
+                }
+
+                model.AuthorId = _currentUserId;
+
+                var newBlog = await _mediator.Send(new UpdateBlogCommand { blogPostDto = model });
+                return RedirectToAction(nameof(Index));
+            }
+            return View(model);
         }
 
         // Delete a blog post by ID

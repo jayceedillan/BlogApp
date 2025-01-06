@@ -89,9 +89,8 @@ namespace BlogApp.Infrastructure.Migrations
 
             modelBuilder.Entity("BlogApp.Core.Entities.BlogPost", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("AuthorId")
                         .IsRequired()

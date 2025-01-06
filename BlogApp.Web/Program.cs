@@ -56,10 +56,11 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRepository<BlogPost>, BlogPostRepository>();
+builder.Services.AddScoped<IFileService, FileService>();
 //builder.Services.AddValidatorsFromAssemblyContaining<CreateUserDtoValidator>();
 // Add FluentValidation for model validation
 //builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
-
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();
 
 // Configure AutoMapper

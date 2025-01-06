@@ -249,6 +249,34 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\0c55a333-76f7-4885-9339-e62d0f255970.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\0c55a333-76f7-4885-9339-e62d0f255970.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\660c5891-6e61-44a8-9ca9-f143438c8361.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\660c5891-6e61-44a8-9ca9-f143438c8361.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\8da3166d-cb6f-47e6-be03-a20065888c84.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\8da3166d-cb6f-47e6-be03-a20065888c84.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\a050fa55-f815-489c-96fe-b14af0a55311.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\a050fa55-f815-489c-96fe-b14af0a55311.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\b7b16314-240a-4a7a-b513-87ad570cecf5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\b7b16314-240a-4a7a-b513-87ad570cecf5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\bb3b69e9-6ea8-4bce-a2de-98970c139bec.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\bb3b69e9-6ea8-4bce-a2de-98970c139bec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\df11752f-0946-4f28-95cf-6b2065cb8900.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\df11752f-0946-4f28-95cf-6b2065cb8900.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlogApp.Web.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

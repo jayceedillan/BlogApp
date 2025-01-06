@@ -160,7 +160,7 @@ namespace BlogApp.Infrastructure.Migrations
                 name: "BlogPosts",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BannerImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),

@@ -51,6 +51,18 @@ namespace BlogApp.Infrastructure.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task<bool> DeleteAsync(BlogPost entity)
+        {
+            var blogPost = await _context.BlogPosts.FindAsync(entity.Id);
+            if (blogPost != null)
+            {
+                _context.BlogPosts.Remove(blogPost);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
     }
 
 }

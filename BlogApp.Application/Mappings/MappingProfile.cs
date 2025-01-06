@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BlogApp.Dto.User;
 using BlogApp.Core.Entities;
+using BlogApp.Dto.Blog;
 
 public class MappingProfile : Profile
 {
@@ -19,5 +20,6 @@ public class MappingProfile : Profile
         // Add mapping for ApplicationUser to UserDto
         CreateMap<ApplicationUser, UserDto>()
             .ForMember(dest => dest.Roles, opt => opt.Ignore());  // You can choose to map roles if needed
+        CreateMap<BlogPostDto, BlogPost>().ReverseMap();
     }
 }
