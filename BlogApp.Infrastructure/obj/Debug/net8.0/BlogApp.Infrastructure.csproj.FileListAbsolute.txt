@@ -1,8 +1,3 @@
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.AssemblyInfo.cs
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\bin\Debug\net8.0\BlogApp.Infrastructure.deps.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\bin\Debug\net8.0\BlogApp.Infrastructure.runtimeconfig.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\bin\Debug\net8.0\BlogApp.Infrastructure.dll
@@ -13,6 +8,12 @@ C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\bin
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\bin\Debug\net8.0\BlogApp.Application.pdb
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\bin\Debug\net8.0\BlogApp.Core.pdb
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\bin\Debug\net8.0\BlogApp.Dto.pdb
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.AssemblyInfo.cs
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.sourcelink.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp..7AC54645.Up2Date
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\BlogApp.Infrastructure.dll
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Infrastructure\obj\Debug\net8.0\refint\BlogApp.Infrastructure.dll

@@ -15,7 +15,7 @@ namespace BlogApp.Application.Validators
             RuleFor(x => x.Content)
                 .NotEmpty().WithMessage("Content is required.");
 
-            RuleFor(x => x.BannerImage)
+            RuleFor(x => x.BannerImagePath)
                 .Must(x => x == null || (x.Length <= 5 * 1024 * 1024 &&
                                          (x.ContentType == "image/jpeg" ||
                                           x.ContentType == "image/png" ||

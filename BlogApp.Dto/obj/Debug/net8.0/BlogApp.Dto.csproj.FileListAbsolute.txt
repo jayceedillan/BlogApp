@@ -6,6 +6,7 @@ C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.AssemblyInfoInputs.cache
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.AssemblyInfo.cs
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.sourcelink.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.dll
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\refint\BlogApp.Dto.dll
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Dto\obj\Debug\net8.0\BlogApp.Dto.pdb
