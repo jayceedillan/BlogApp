@@ -4,11 +4,6 @@ using BlogApp.Core.Exceptions;
 using BlogApp.Core.Interfaces;
 using BlogApp.Dto.Blog;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BlogApp.Application.Blogs.Commands.UpdateBlog
 {
@@ -36,9 +31,6 @@ namespace BlogApp.Application.Blogs.Commands.UpdateBlog
             string? bannerImageUrl = null;
             if (request.blogPostDto.ImagePath != null)
             {
-                //IFormFile formFile = FileHelper.ConvertToIFormFile(request.blogPostDto.BannerImagePath);
-
-                // Upload file to the server using IFileService
                 bannerImageUrl = await _fileService.SaveFileAsync(request.blogPostDto.ImagePath, "blog_images");
                 blog.BannerImagePath = bannerImageUrl;
             }

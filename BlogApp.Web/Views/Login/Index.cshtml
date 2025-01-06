@@ -1,8 +1,16 @@
 ﻿@model BlogApp.Application.DTOs.LoginDto
 
-@{
-    ViewData["Title"] = "Login";
-}
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 500px;
+    }
+</style>
 
 @if (ViewBag.ErrorMessage != null)
 {
@@ -10,73 +18,33 @@
         @ViewBag.ErrorMessage
     </div>
 }
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-2"></div>
-        <div class="col-lg-6 col-md-8 login-box">
-            <div class="col-lg-12 login-title">
-                LOGIN
-            </div>
-
-            <div class="col-lg-12 login-form">
-                <div class="col-lg-12 login-form">
-                    <form asp-action="Login" method="post" novalidate>
-                        <div class="form-group">
-                            <label asp-for="Email" class="form-control-label" for="Email">Email Address</label>
-                            <input asp-for="Email" id="Email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email" autocomplete="email" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Password" class="form-control-label" for="Password">Password</label>
-                            <input asp-for="Password" id="Password" type="password" class="form-control" placeholder="Enter your password" autocomplete="current-password" />
-                            <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
-
-                        <div class="col-lg-12 loginbttm">
-                            <div class="col-lg-12 login-btm login-button d-flex justify-content-center">
-                                <button type="submit" class="btn btn-outline-primary">SUBMIT</button>
-                               
-                            </div>
-                        </div>
-                    </form>
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Login</h6>
+        </div>
+        <div class="card-body">
+            <form asp-action="Login" method="post" novalidate>
+                <div class="form-group">
+                    <label asp-for="Email" class="form-control-label" for="Email">Email Address</label>
+                    <input asp-for="Email" id="Email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
-            </div>
-           
+                <div class="form-group">
+                    <label asp-for="Password" class="form-control-label" for="Password">Password</label>
+                    <input asp-for="Password" id="Password" type="password" class="form-control" placeholder="Enter your password"/>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="col-lg-12 loginbttm">
+                    <div class="col-lg-12 login-btm login-button d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-
-
-
-
-
-@* <div class="container">
-    <h2 class="text-center">Login</h2>
-
-    @if (ViewBag.ErrorMessage != null)
-    {
-        <div class="alert alert-danger">
-            @ViewBag.ErrorMessage
-        </div>
-    }
-
-    <form asp-action="Login" method="post" novalidate>
-        <div class="form-group">
-            <label asp-for="Email" class="control-label" for="Email">Email Address</label>
-            <input asp-for="Email" id="Email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email" autocomplete="email" />
-            <span asp-validation-for="Email" class="text-danger"></span>
-        </div>
-
-        <div class="form-group">
-            <label asp-for="Password" class="control-label" for="Password">Password</label>
-            <input asp-for="Password" id="Password" type="password" class="form-control" placeholder="Enter your password" autocomplete="current-password" />
-            <span asp-validation-for="Password" class="text-danger"></span>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
-</div> *@
-
+</div>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

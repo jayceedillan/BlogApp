@@ -35,7 +35,7 @@ namespace BlogApp.Web.Controllers
         {
             var user = httpContextAccessor.HttpContext?.User;
 
-           
+
             if (user != null && user.Identity?.IsAuthenticated == true)
             {
                 var userId = user.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -53,7 +53,7 @@ namespace BlogApp.Web.Controllers
             {
                 return NotFound();
             }
-            
+
             return View(blog);
         }
 
@@ -65,50 +65,77 @@ namespace BlogApp.Web.Controllers
         }
 
         // Handle the creation of a blog post
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(BlogPostDto model, IFormFile? bannerImage)
         {
-            if (ModelState.IsValid)
+            try
             {
-                
-                if (bannerImage != null && bannerImage.Length > 0)
+                if (ModelState.IsValid)
                 {
-                    model.ImagePath = bannerImage;
+
+                    if (bannerImage != null && bannerImage.Length > 0)
+                    {
+                        model.ImagePath = bannerImage;
+                    }
+                    model.AuthorId = _currentUserId;
+
+                    var newBlog = await _mediator.Send(new CreateBlogCommand { blogPostDto = model });
+
+                    return RedirectToAction(nameof(Index));
                 }
-               
-
-                model.AuthorId = _currentUserId;
-
-                var newBlog = await _mediator.Send(new CreateBlogCommand { blogPostDto = model});
-                return RedirectToAction(nameof(Index)); 
+                return View(model);
             }
-            return View(model);
+            catch (ArgumentException ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, "An unexpected error occurred. Please try again.");
+                return View(model);
+            }
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(BlogPostDto model, IFormFile? bannerImage)
         {
-            if (ModelState.IsValid)
+            try
             {
-                if (bannerImage != null && bannerImage.Length > 0)
+
+                if (ModelState.IsValid)
                 {
-                    model.ImagePath = bannerImage;
+                    if (bannerImage != null && bannerImage.Length > 0)
+                    {
+                        model.ImagePath = bannerImage;
+                    }
+
+                    model.AuthorId = _currentUserId;
+
+                    var newBlog = await _mediator.Send(new UpdateBlogCommand { blogPostDto = model });
+                    return RedirectToAction(nameof(Index));
                 }
-
-                model.AuthorId = _currentUserId;
-
-                var newBlog = await _mediator.Send(new UpdateBlogCommand { blogPostDto = model });
-                return RedirectToAction(nameof(Index));
+                return View(model);
             }
-            return View(model);
+            catch (ArgumentException ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, "An unexpected error occurred. Please try again.");
+                return View(model);
+            }
         }
 
         // Delete a blog post by ID
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(string id)
         {
             var result = await _mediator.Send(new DeleteBlogCommand(id));
             if (result)

@@ -4,9 +4,9 @@ namespace BlogApp.Application.Blogs.Commands.DeleteBlog
 {
     public class DeleteBlogCommand : IRequest<bool> 
     {
-        public Guid BlogId { get; set; }
+        public string BlogId { get; set; }
 
-        public DeleteBlogCommand(Guid blogId)
+        public DeleteBlogCommand(string blogId)
         {
             BlogId = blogId;
         }

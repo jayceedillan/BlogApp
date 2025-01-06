@@ -1,0 +1,43 @@
+﻿@model BlogApp.Dto.Blog.BlogPostDto
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger" role="alert">
+        @Html.ValidationSummary(true)
+    </div>
+}
+<div class="form-group">
+    <label asp-for="Title"></label>
+    <input asp-for="Title" class="form-control" />
+    <span asp-validation-for="Title" class="text-danger"></span>
+</div>
+<div class="form-group" id="tinyMceFormGroup" style="display: none;">
+    <label asp-for="Content"></label>
+    <textarea asp-for="Content" class="form-control" id="blogContent"></textarea>
+    <span asp-validation-for="Content" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="BannerImagePath">Banner Image</label>
+    <input type="file" name="bannerImage" class="form-control" id="BannerImage" />
+    <span asp-validation-for="BannerImagePath" class="text-danger"></span>
+</div>
+<div class="form-group">
+    @if (Model?.BannerImagePath != null)
+    {
+        <img src="@Model.BannerImagePath" id="imagePreview" style="max-width: 300px; max-height: 300px;" />
+    }
+    else
+    {
+        <img id="imagePreview" style="display: none; max-width: 300px; max-height: 300px;" />
+    }
+</div>
+<div class="form-group d-flex justify-content-end gap-1">
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</div>
+
+@{
+    ViewData["TextareaId"] = "blogContent";
+}
+@Html.Partial("_TinyMCEEditor")
+
+
