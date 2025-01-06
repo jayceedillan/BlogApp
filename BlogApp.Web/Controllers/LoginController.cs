@@ -1,5 +1,5 @@
-﻿using BlogApp.Application.DTOs;
-using BlogApp.Core.Interfaces;
+﻿using BlogApp.Core.Interfaces;
+using BlogApp.Dto.Login;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.Web.Controllers

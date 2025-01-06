@@ -10881,3 +10881,70 @@ FROM [BlogPosts] AS [b]
 2025-01-06 20:45:27.502 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
 2025-01-06 20:45:27.508 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.7883ms
 2025-01-06 20:45:27.539 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.0816ms
+2025-01-06 21:04:17.355 +08:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-06 21:04:18.478 +08:00 [INF] Executed DbCommand (40ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-06 21:04:18.539 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-06 21:04:18.554 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-01-06 21:04:18.900 +08:00 [INF] Now listening on: https://localhost:7276
+2025-01-06 21:04:18.903 +08:00 [INF] Now listening on: http://localhost:5212
+2025-01-06 21:04:18.910 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 21:04:18.913 +08:00 [INF] Hosting environment: Development
+2025-01-06 21:04:18.915 +08:00 [INF] Content root path: C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web
+2025-01-06 21:04:19.977 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-01-06 21:04:20.205 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-01-06 21:04:20.247 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-01-06 21:04:20.272 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-01-06 21:04:20.277 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-06 21:04:20.289 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-01-06 21:04:20.299 +08:00 [INF] Executing endpoint 'BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web)'
+2025-01-06 21:04:20.310 +08:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BlogApp.Web.Controllers.LoginController (BlogApp.Web).
+2025-01-06 21:04:20.325 +08:00 [INF] Executing RedirectResult, redirecting to /Blog.
+2025-01-06 21:04:20.330 +08:00 [INF] Executed action BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web) in 11.8443ms
+2025-01-06 21:04:20.333 +08:00 [INF] Executed endpoint 'BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web)'
+2025-01-06 21:04:20.346 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 302 0 null 381.0745ms
+2025-01-06 21:04:20.349 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/Blog - null null
+2025-01-06 21:04:20.366 +08:00 [INF] Executing endpoint 'BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web)'
+2025-01-06 21:04:20.371 +08:00 [INF] Route matched with {action = "Index", controller = "Blog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BlogApp.Web.Controllers.BlogController (BlogApp.Web).
+2025-01-06 21:04:20.451 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[BannerImagePath], [b].[Content], [b].[CreatedAt], [b].[PublishedAt], [b].[Status], [b].[Title]
+FROM [BlogPosts] AS [b]
+2025-01-06 21:04:20.497 +08:00 [INF] Executing ViewResult, running view Index.
+2025-01-06 21:04:20.578 +08:00 [INF] Executed ViewResult - view Index executed in 85.724ms.
+2025-01-06 21:04:20.584 +08:00 [INF] Executed action BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web) in 210.3397ms
+2025-01-06 21:04:20.587 +08:00 [INF] Executed endpoint 'BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web)'
+2025-01-06 21:04:20.590 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/Blog - 200 null text/html; charset=utf-8 241.144ms
+2025-01-06 21:04:20.598 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/css/site.css?v=8n7JBIYCwKeePjlMnSimQ2I1cPEfBaxtO02mVY4Bznk - null null
+2025-01-06 21:04:20.598 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 21:04:20.601 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/js/validation.js - null null
+2025-01-06 21:04:20.607 +08:00 [INF] The file /css/site.css was not modified
+2025-01-06 21:04:20.609 +08:00 [INF] The file /js/validation.js was not modified
+2025-01-06 21:04:20.610 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 12.5817ms
+2025-01-06 21:04:20.612 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/css/site.css?v=8n7JBIYCwKeePjlMnSimQ2I1cPEfBaxtO02mVY4Bznk - 304 null text/css 14.4144ms
+2025-01-06 21:04:20.612 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/js/validation.js - 304 null text/javascript 11.2954ms
+2025-01-06 21:04:21.638 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-01-06 21:04:21.687 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.7489ms

@@ -1,3 +1,13 @@
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.AssemblyInfo.cs
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.RazorAssemblyInfo.cache
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.RazorAssemblyInfo.cs
+C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.sourcelink.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\bin\Debug\net8.0\appsettings.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\bin\Debug\net8.0\BlogApp.Web.staticwebassets.runtime.json
@@ -158,15 +168,6 @@ C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\bin\Debug\net8
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\bin\Debug\net8.0\BlogApp.Application.pdb
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\bin\Debug\net8.0\BlogApp.Core.pdb
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\bin\Debug\net8.0\BlogApp.Dto.pdb
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.csproj.AssemblyReference.cache
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.AssemblyInfoInputs.cache
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.AssemblyInfo.cs
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.csproj.CoreCompileInputs.cache
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.RazorAssemblyInfo.cache
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.RazorAssemblyInfo.cs
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.sourcelink.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\staticwebassets\msbuild.BlogApp.Web.Microsoft.AspNetCore.StaticWebAssets.props
@@ -183,4 +184,3 @@ C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.pdb
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.genruntimeconfig.cache
 C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\ref\BlogApp.Web.dll
-C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web\obj\Debug\net8.0\BlogApp.Web.MvcApplicationPartsAssemblyInfo.cs
