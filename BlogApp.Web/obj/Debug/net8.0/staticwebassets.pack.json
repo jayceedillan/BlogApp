@@ -249,8 +249,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\09ef2032-2653-4de6-89d6-f7ad4d742fd9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\09ef2032-2653-4de6-89d6-f7ad4d742fd9.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\0c55a333-76f7-4885-9339-e62d0f255970.jpg",
       "PackagePath": "staticwebassets\\uploads\\blog_images\\0c55a333-76f7-4885-9339-e62d0f255970.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\227bec8b-7e53-454d-bd23-ee4bab16cab4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\227bec8b-7e53-454d-bd23-ee4bab16cab4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\3b2cdacd-c54e-4c7a-98d1-f79c6534352b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\3b2cdacd-c54e-4c7a-98d1-f79c6534352b.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\660c5891-6e61-44a8-9ca9-f143438c8361.jpg",
@@ -259,6 +271,10 @@
     {
       "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\6733064d-6d1d-47df-b223-41f0f77ebc88.jpg",
       "PackagePath": "staticwebassets\\uploads\\blog_images\\6733064d-6d1d-47df-b223-41f0f77ebc88.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\7bf0c022-dc0d-4536-8862-ee293495dce4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\7bf0c022-dc0d-4536-8862-ee293495dce4.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\8da3166d-cb6f-47e6-be03-a20065888c84.jpg",
@@ -289,12 +305,20 @@
       "PackagePath": "staticwebassets\\uploads\\blog_images\\bb3b69e9-6ea8-4bce-a2de-98970c139bec.jpg"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\bbfb9b32-2958-4cde-baff-c6f74b870202.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\bbfb9b32-2958-4cde-baff-c6f74b870202.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\ded773ba-2ea3-4384-9ed8-9fc9b36a2dfc.jpg",
       "PackagePath": "staticwebassets\\uploads\\blog_images\\ded773ba-2ea3-4384-9ed8-9fc9b36a2dfc.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\df11752f-0946-4f28-95cf-6b2065cb8900.jpg",
       "PackagePath": "staticwebassets\\uploads\\blog_images\\df11752f-0946-4f28-95cf-6b2065cb8900.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\fed79c5a-a0b0-4ebf-bbe9-86eb4d82961a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blog_images\\fed79c5a-a0b0-4ebf-bbe9-86eb4d82961a.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlogApp.Web.Microsoft.AspNetCore.StaticWebAssets.props",

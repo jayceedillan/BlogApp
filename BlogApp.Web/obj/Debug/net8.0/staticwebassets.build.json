@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tQSR6DAI4V1yrXeY/NX5xnHtyk1deR4aZR0sj3tmM8I=",
+  "Hash": "7MXtsKIC21RZmvJ3q5uRWDbvi7v9jJX675m4m0ij4Zg=",
   "Source": "BlogApp.Web",
   "BasePath": "_content/BlogApp.Web",
   "Mode": "Default",
@@ -2354,6 +2354,25 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\09ef2032-2653-4de6-89d6-f7ad4d742fd9.jpg",
+      "SourceId": "BlogApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\",
+      "BasePath": "_content/BlogApp.Web",
+      "RelativePath": "uploads/blog_images/09ef2032-2653-4de6-89d6-f7ad4d742fd9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\09ef2032-2653-4de6-89d6-f7ad4d742fd9.jpg"
+    },
+    {
       "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\0c55a333-76f7-4885-9339-e62d0f255970.jpg",
       "SourceId": "BlogApp.Web",
       "SourceType": "Discovered",
@@ -2371,6 +2390,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\0c55a333-76f7-4885-9339-e62d0f255970.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\227bec8b-7e53-454d-bd23-ee4bab16cab4.jpg",
+      "SourceId": "BlogApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\",
+      "BasePath": "_content/BlogApp.Web",
+      "RelativePath": "uploads/blog_images/227bec8b-7e53-454d-bd23-ee4bab16cab4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\227bec8b-7e53-454d-bd23-ee4bab16cab4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\3b2cdacd-c54e-4c7a-98d1-f79c6534352b.jpg",
+      "SourceId": "BlogApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\",
+      "BasePath": "_content/BlogApp.Web",
+      "RelativePath": "uploads/blog_images/3b2cdacd-c54e-4c7a-98d1-f79c6534352b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\3b2cdacd-c54e-4c7a-98d1-f79c6534352b.jpg"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\660c5891-6e61-44a8-9ca9-f143438c8361.jpg",
@@ -2409,6 +2466,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\6733064d-6d1d-47df-b223-41f0f77ebc88.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\7bf0c022-dc0d-4536-8862-ee293495dce4.jpg",
+      "SourceId": "BlogApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\",
+      "BasePath": "_content/BlogApp.Web",
+      "RelativePath": "uploads/blog_images/7bf0c022-dc0d-4536-8862-ee293495dce4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\7bf0c022-dc0d-4536-8862-ee293495dce4.jpg"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\8da3166d-cb6f-47e6-be03-a20065888c84.jpg",
@@ -2544,6 +2620,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\bb3b69e9-6ea8-4bce-a2de-98970c139bec.jpg"
     },
     {
+      "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\bbfb9b32-2958-4cde-baff-c6f74b870202.jpg",
+      "SourceId": "BlogApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\",
+      "BasePath": "_content/BlogApp.Web",
+      "RelativePath": "uploads/blog_images/bbfb9b32-2958-4cde-baff-c6f74b870202.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\bbfb9b32-2958-4cde-baff-c6f74b870202.jpg"
+    },
+    {
       "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\ded773ba-2ea3-4384-9ed8-9fc9b36a2dfc.jpg",
       "SourceId": "BlogApp.Web",
       "SourceType": "Discovered",
@@ -2580,6 +2675,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\df11752f-0946-4f28-95cf-6b2065cb8900.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\uploads\\blog_images\\fed79c5a-a0b0-4ebf-bbe9-86eb4d82961a.jpg",
+      "SourceId": "BlogApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\personal\\singapore\\Blog\\BlogApp\\BlogApp.Web\\wwwroot\\",
+      "BasePath": "_content/BlogApp.Web",
+      "RelativePath": "uploads/blog_images/fed79c5a-a0b0-4ebf-bbe9-86eb4d82961a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\blog_images\\fed79c5a-a0b0-4ebf-bbe9-86eb4d82961a.jpg"
     }
   ]
 }

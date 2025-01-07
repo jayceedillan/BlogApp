@@ -26,6 +26,14 @@ namespace BlogApp.Application.Users.Commands.CreateUser
                 try
                 {
                     var user = _mapper.Map<ApplicationUser>(request.UserDto);
+
+                    var existingUser = await _userRepository.getUserByUserNameAsync(user.UserName ?? string.Empty);
+
+                    if (existingUser != null)
+                    {
+                        return Result.Fail("Username is already taken.");
+                    }
+
                     var passwordHasher = new PasswordHasher<ApplicationUser>();
                     user.PasswordHash = passwordHasher.HashPassword(user, request.UserDto.Password);
                   

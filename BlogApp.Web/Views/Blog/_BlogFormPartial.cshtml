@@ -17,15 +17,15 @@
     <span asp-validation-for="Content" class="text-danger"></span>
 </div>
 <div class="form-group">
-    <label asp-for="BannerImagePath">Banner Image</label>
-    <input type="file" name="bannerImage" class="form-control" id="BannerImage" />
-    <span asp-validation-for="BannerImagePath" class="text-danger"></span>
-</div>
-<div class="form-group">
     <label asp-for="Status">Status</label>
     <select asp-for="Status" class="form-control" asp-items="Html.GetEnumSelectList<BlogApp.Dto.Blog.BlogStatus>()">
     </select>
     <span asp-validation-for="Status" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="BannerImagePath">Banner Image</label>
+    <input type="file" name="bannerImage" class="form-control" id="BannerImage" />
+    <span asp-validation-for="BannerImagePath" class="text-danger"></span>
 </div>
 <div class="form-group">
     @if (Model?.BannerImagePath != null)
@@ -42,9 +42,6 @@
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </div>
 
-@{
-    ViewData["TextareaId"] = "blogContent";
-}
 @Html.Partial("_TinyMCEEditor")
 
 

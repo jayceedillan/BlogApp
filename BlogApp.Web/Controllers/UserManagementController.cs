@@ -27,6 +27,10 @@ namespace BlogApp.Web.Controllers
         public async Task<IActionResult> Index()
         {
             var result = await _mediator.Send(new GetUsersQuery());
+            if (!result.IsSuccess)
+            {
+                TempData["Error"] = "An error occurred while retrieving the user list.";
+            }
             return View(result.Value);
         }
 
@@ -51,12 +55,10 @@ namespace BlogApp.Web.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // Get the roles associated with the user
             var roles = await _mediator.Send(new GetRolesForUserQuery(id));
             var allRoles = await _mediator.Send(new GetRolesQuery());
             var viewModel = _mapper.Map<EditUserDto>(user);
 
-            // Retrieve and set the selected roles for the user
             viewModel.SelectedRoles = roles.Select(r => r.Name).ToList();
             viewModel.Roles = allRoles;
 
@@ -72,13 +74,10 @@ namespace BlogApp.Web.Controllers
                 var result = await _mediator.Send(new CreateUserCommand { UserDto = model });
                 if (result.IsSuccess)
                 {
-                    TempData["Success"] = "User created successfully";
                     return RedirectToAction(nameof(Index));
                 }
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError(string.Empty, error.Message);
-                }
+
+                TempData["Error"] = result.Errors[0].Message;
             }
 
             model.Roles = await _mediator.Send(new GetRolesQuery());
@@ -91,36 +90,35 @@ namespace BlogApp.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Send the update command to update the user's details
+             
                 var result = await _mediator.Send(new UpdateUserCommand { UserDto = model });
 
                 if (result.IsSuccess)
                 {
                     return RedirectToAction(nameof(Index));
                 }
+
+                TempData["Error"] = result.Errors[0].Message;
             }
 
-            // If the model is invalid or failed, re-fetch roles and return to the view
             model.Roles = await _mediator.Send(new GetRolesQuery());
             return View(model);
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(string id)
         {
             var result = await _mediator.Send(new DeleteUserCommand { UserId = id });
-            
+
             if (!result.IsSuccess)
             {
-                var firstReason = result.Reasons.FirstOrDefault();
-              
-                if (firstReason != null && !string.IsNullOrEmpty(firstReason.Message))
+                foreach (var reason in result.Reasons)
                 {
-                    TempData["Error"] = firstReason.Message.ToString();
+                    TempData["Error"] = reason.Message;
                 }
             }
+           
             return RedirectToAction(nameof(Index));
         }
     }

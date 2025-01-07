@@ -4,7 +4,6 @@ using BlogApp.Core.Entities;
 using BlogApp.Core.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Http;
-using System.Security.Claims;
 
 namespace BlogApp.Application.Blogs.Commands.CreateBlog
 {
@@ -39,7 +38,7 @@ namespace BlogApp.Application.Blogs.Commands.CreateBlog
                 }
                 var newBlog = _mapper.Map<BlogPost>(request.blogPostDto);
                 newBlog.BannerImagePath = bannerImageUrl ?? string.Empty;
-
+  
                 await _repository.AddAsync(newBlog);
 
                 return newBlog;

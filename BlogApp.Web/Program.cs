@@ -4,6 +4,7 @@ using BlogApp.Core.Entities;
 using BlogApp.Core.Interfaces;
 using BlogApp.Infrastructure.DbContexts;
 using BlogApp.Infrastructure.Repositories;
+using BlogApp.Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -47,6 +48,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRepository<BlogPost>, BlogPostRepository>();
 builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();

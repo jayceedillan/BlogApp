@@ -7,6 +7,13 @@
             <h6 class="m-0 font-weight-bold text-primary">Edit User Details</h6>
         </div>
         <div class="card-body">
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["Error"]
+                </div>
+            }
+
             <form asp-action="Edit" method="post" novalidate>
                 <div class="form-group">
                     <label asp-for="UserName" class="form-control-label" for="UserName"></label>
@@ -38,7 +45,7 @@
                     <span asp-validation-for="SelectedRoles" class="text-danger"></span>
                 </div>
                 <div class="form-group d-flex justify-content-end gap-1">
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
                     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
                 </div>
             </form>
