@@ -10,11 +10,11 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Logging
+
 builder.Services.AddLogging(logging =>
 {
-    logging.AddConsole();  // Enables console logging
-    logging.AddDebug();    // Enables debug logging
+    logging.AddConsole();
+    logging.AddDebug();
 });
 
 Log.Logger = new LoggerConfiguration()
@@ -24,25 +24,16 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Services.AddLogging(logging =>
 {
-    logging.AddSerilog(); // Adds Serilog to the logging pipeline
+    logging.AddSerilog();
 });
 
-
-// Configure Services
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("blogDb")));
 
-// Make sure to use ApplicationUser for Identity setup
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-{
-    //options.Password.RequireDigit = true; 
-    //options.Password.RequireLowercase = true; 
-    //options.Password.RequireUppercase = true; 
-    //options.Password.RequireNonAlphanumeric = true; 
-    //options.Password.RequiredLength = 8; 
-})
-.AddEntityFrameworkStores<ApplicationDbContext>()
-.AddDefaultTokenProviders();
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+        .AddEntityFrameworkStores<ApplicationDbContext>()
+        .AddDefaultTokenProviders();
 
 
 builder.Services.AddAuthorization(options =>
@@ -57,8 +48,6 @@ builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRepository<BlogPost>, BlogPostRepository>();
 builder.Services.AddScoped<IFileService, FileService>();
 
-// Add FluentValidation for model validation
-//builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();
 
@@ -76,7 +65,7 @@ builder.Services.AddMediatR(cfg =>
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.AccessDeniedPath = "/Account/AccessDenied"; // Redirects here when access is denied
+    options.AccessDeniedPath = "/Account/AccessDenied"; 
 });
 
 // Build the application
