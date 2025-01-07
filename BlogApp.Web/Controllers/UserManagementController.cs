@@ -81,7 +81,6 @@ namespace BlogApp.Web.Controllers
                 }
             }
 
-            // Re-fetch roles in case of validation errors
             model.Roles = await _mediator.Send(new GetRolesQuery());
             return View(model);
         }

@@ -20,11 +20,9 @@ namespace BlogApp.Application.Blogs.Commands.DeleteBlog
 
             if (blogPost == null)
             {
-                // Blog post not found, return false
                 return false;
             }
 
-            // Delete the blog post from the repository
             var result = await _repository.DeleteAsync(blogPost);
 
             return result; 

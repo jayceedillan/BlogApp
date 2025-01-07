@@ -11,15 +11,13 @@ namespace BlogApp.Application.Helper
                 throw new FileNotFoundException("File not found at the specified path.", filePath);
             }
 
-         
             var fileBytes = File.ReadAllBytes(filePath);
             var stream = new MemoryStream(fileBytes);
 
-           
             var formFile = new FormFile(stream, 0, fileBytes.Length, "file", Path.GetFileName(filePath))
             {
                 Headers = new HeaderDictionary(),
-                ContentType = GetContentType(filePath), // Set the appropriate content type
+                ContentType = GetContentType(filePath), 
             };
 
             return formFile;
@@ -39,7 +37,7 @@ namespace BlogApp.Application.Helper
                 case ".gif":
                     return "image/gif";
                 default:
-                    return "application/octet-stream"; // Default MIME type
+                    return "application/octet-stream"; 
             }
         }
     }

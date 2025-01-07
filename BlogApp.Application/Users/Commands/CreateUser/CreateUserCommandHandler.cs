@@ -25,14 +25,12 @@ namespace BlogApp.Application.Users.Commands.CreateUser
             {
                 try
                 {
-                    // Map UserDto to ApplicationUser
                     var user = _mapper.Map<ApplicationUser>(request.UserDto);
                     var passwordHasher = new PasswordHasher<ApplicationUser>();
                     user.PasswordHash = passwordHasher.HashPassword(user, request.UserDto.Password);
-                    // Create the user
+                  
                     var createdUser = await _userRepository.CreateUserAsync(user);
                   
-                    // Add roles to the user
                     if (request.UserDto.SelectedRoles != null && request.UserDto.SelectedRoles.Any())
                     {
                         await _userRepository.AddRolesToUserAsync(createdUser, request.UserDto.SelectedRoles);
@@ -45,8 +43,6 @@ namespace BlogApp.Application.Users.Commands.CreateUser
                 }
                 catch (Exception ex)
                 {
-                    // Log the exception (optional)
-                    // Rollback is implicit if `Complete()` is not called
                     return Result.Fail($"An error occurred while creating the user: {ex.Message}");
                 }
             }

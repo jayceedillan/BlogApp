@@ -4,6 +4,7 @@ using BlogApp.Core.Entities;
 using BlogApp.Core.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
 
 namespace BlogApp.Application.Blogs.Commands.CreateBlog
 {

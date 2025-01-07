@@ -18,7 +18,6 @@ namespace BlogApp.Application.Helper
                 return false;
             }
 
-            // Optional: Check file size if the path is a local file
             if (File.Exists(path))
             {
                 var fileInfo = new FileInfo(path);
