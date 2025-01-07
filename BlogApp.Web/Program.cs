@@ -4,7 +4,6 @@ using BlogApp.Core.Entities;
 using BlogApp.Core.Interfaces;
 using BlogApp.Infrastructure.DbContexts;
 using BlogApp.Infrastructure.Repositories;
-using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -70,9 +69,10 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 //builder.Services.AddValidatorsFromAssembly(typeof(CreateUserCommandValidator).Assembly);
 
 // Register MediatR with validation behavior
-//builder.Services.AddMediatR(cfg => {
-//    cfg.RegisterServicesFromAssembly(typeof(CreateUserCommandValidator).Assembly);
-//});
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(CreateUserCommandValidator).Assembly);
+});
 
 builder.Services.ConfigureApplicationCookie(options =>
 {

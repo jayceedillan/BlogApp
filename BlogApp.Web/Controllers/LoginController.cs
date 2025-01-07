@@ -18,7 +18,6 @@ namespace BlogApp.Web.Controllers
         {
             if (User.Identity?.IsAuthenticated == true) 
             {
-                // Redirect to the Blog page
                 return RedirectToAction("Index", "Blog");
             }
 

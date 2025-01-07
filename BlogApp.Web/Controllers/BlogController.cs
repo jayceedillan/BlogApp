@@ -7,7 +7,6 @@ using BlogApp.Dto.Blog;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Security.Claims;
 
 namespace BlogApp.Web.Controllers

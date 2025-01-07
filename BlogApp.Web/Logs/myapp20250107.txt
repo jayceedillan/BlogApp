@@ -529,3 +529,151 @@ WHERE [a].[UserId] = @__userId_0
 2025-01-07 11:18:27.308 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
 2025-01-07 11:18:27.311 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.8798ms
 2025-01-07 11:18:27.327 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.5997ms
+2025-01-07 11:32:23.145 +08:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-07 11:32:24.269 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-07 11:32:24.335 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-07 11:32:24.350 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-01-07 11:32:24.727 +08:00 [INF] Now listening on: https://localhost:7276
+2025-01-07 11:32:24.735 +08:00 [INF] Now listening on: http://localhost:5212
+2025-01-07 11:32:24.750 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-07 11:32:24.759 +08:00 [INF] Hosting environment: Development
+2025-01-07 11:32:24.764 +08:00 [INF] Content root path: C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web
+2025-01-07 11:32:25.750 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-01-07 11:32:25.917 +08:00 [INF] Executing endpoint 'BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web)'
+2025-01-07 11:32:25.932 +08:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BlogApp.Web.Controllers.LoginController (BlogApp.Web).
+2025-01-07 11:32:25.957 +08:00 [INF] Executing RedirectResult, redirecting to /Blog.
+2025-01-07 11:32:25.968 +08:00 [INF] Executed action BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web) in 25.0835ms
+2025-01-07 11:32:25.972 +08:00 [INF] Executed endpoint 'BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web)'
+2025-01-07 11:32:25.980 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 302 0 null 236.6854ms
+2025-01-07 11:32:25.994 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/Blog - null null
+2025-01-07 11:32:26.023 +08:00 [INF] Executing endpoint 'BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web)'
+2025-01-07 11:32:26.033 +08:00 [INF] Route matched with {action = "Index", controller = "Blog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BlogApp.Web.Controllers.BlogController (BlogApp.Web).
+2025-01-07 11:32:26.043 +08:00 [INF] Executed action BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web) in 5.2011ms
+2025-01-07 11:32:26.048 +08:00 [INF] Executed endpoint 'BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web)'
+2025-01-07 11:32:26.101 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'BlogApp.Web.Controllers.BlogController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method160(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-07 11:32:26.150 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/Blog - 500 null text/html; charset=utf-8 155.8743ms
+2025-01-07 11:32:26.172 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-01-07 11:32:26.172 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-07 11:32:26.185 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 12.8382ms
+2025-01-07 11:32:26.221 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.4694ms
+2025-01-07 11:33:06.066 +08:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-07 11:33:07.882 +08:00 [INF] Executed DbCommand (62ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-07 11:33:07.995 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-07 11:33:08.030 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-01-07 11:33:08.514 +08:00 [INF] Now listening on: https://localhost:7276
+2025-01-07 11:33:08.530 +08:00 [INF] Now listening on: http://localhost:5212
+2025-01-07 11:33:08.558 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-07 11:33:08.567 +08:00 [INF] Hosting environment: Development
+2025-01-07 11:33:08.571 +08:00 [INF] Content root path: C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web
+2025-01-07 11:33:09.764 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-01-07 11:33:10.183 +08:00 [INF] Executing endpoint 'BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web)'
+2025-01-07 11:33:10.209 +08:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BlogApp.Web.Controllers.LoginController (BlogApp.Web).
+2025-01-07 11:33:10.249 +08:00 [INF] Executing RedirectResult, redirecting to /Blog.
+2025-01-07 11:33:10.262 +08:00 [INF] Executed action BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web) in 38.3899ms
+2025-01-07 11:33:10.265 +08:00 [INF] Executed endpoint 'BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web)'
+2025-01-07 11:33:10.276 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 302 0 null 530.2284ms
+2025-01-07 11:33:10.291 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/Blog - null null
+2025-01-07 11:33:10.327 +08:00 [INF] Executing endpoint 'BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web)'
+2025-01-07 11:33:10.345 +08:00 [INF] Route matched with {action = "Index", controller = "Blog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BlogApp.Web.Controllers.BlogController (BlogApp.Web).
+2025-01-07 11:33:10.358 +08:00 [INF] Executed action BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web) in 8.6699ms
+2025-01-07 11:33:10.367 +08:00 [INF] Executed endpoint 'BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web)'
+2025-01-07 11:33:10.451 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'BlogApp.Web.Controllers.BlogController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method160(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-07 11:33:10.568 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/Blog - 500 null text/html; charset=utf-8 276.4323ms
+2025-01-07 11:33:10.586 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-01-07 11:33:10.585 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-07 11:33:10.605 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 20.5925ms
+2025-01-07 11:33:10.684 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.832ms
+2025-01-07 11:33:35.327 +08:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-07 11:33:37.414 +08:00 [INF] Executed DbCommand (57ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-07 11:33:37.528 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-01-07 11:33:37.557 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-01-07 11:33:38.069 +08:00 [INF] Now listening on: https://localhost:7276
+2025-01-07 11:33:38.079 +08:00 [INF] Now listening on: http://localhost:5212
+2025-01-07 11:33:38.089 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-07 11:33:38.094 +08:00 [INF] Hosting environment: Development
+2025-01-07 11:33:38.099 +08:00 [INF] Content root path: C:\Users\USER\Desktop\personal\singapore\Blog\BlogApp\BlogApp.Web
+2025-01-07 11:33:39.069 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-01-07 11:33:39.300 +08:00 [INF] Executing endpoint 'BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web)'
+2025-01-07 11:33:39.327 +08:00 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BlogApp.Web.Controllers.LoginController (BlogApp.Web).
+2025-01-07 11:33:39.359 +08:00 [INF] Executing RedirectResult, redirecting to /Blog.
+2025-01-07 11:33:39.370 +08:00 [INF] Executed action BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web) in 27.8733ms
+2025-01-07 11:33:39.378 +08:00 [INF] Executed endpoint 'BlogApp.Web.Controllers.LoginController.Index (BlogApp.Web)'
+2025-01-07 11:33:39.387 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 302 0 null 331.1607ms
+2025-01-07 11:33:39.393 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/Blog - null null
+2025-01-07 11:33:39.417 +08:00 [INF] Executing endpoint 'BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web)'
+2025-01-07 11:33:39.428 +08:00 [INF] Route matched with {action = "Index", controller = "Blog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BlogApp.Web.Controllers.BlogController (BlogApp.Web).
+2025-01-07 11:33:39.675 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[BannerImagePath], [b].[Content], [b].[CreatedAt], [b].[PublishedAt], [b].[Status], [b].[Title]
+FROM [BlogPosts] AS [b]
+2025-01-07 11:33:39.756 +08:00 [INF] Executing ViewResult, running view Index.
+2025-01-07 11:33:39.998 +08:00 [INF] Executed ViewResult - view Index executed in 249.2219ms.
+2025-01-07 11:33:40.030 +08:00 [INF] Executed action BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web) in 597.1127ms
+2025-01-07 11:33:40.037 +08:00 [INF] Executed endpoint 'BlogApp.Web.Controllers.BlogController.Index (BlogApp.Web)'
+2025-01-07 11:33:40.052 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-07 11:33:40.087 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/Blog - 200 null text/html; charset=utf-8 693.9192ms
+2025-01-07 11:33:40.209 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 158.01ms
+2025-01-07 11:33:40.626 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-01-07 11:33:40.698 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.7949ms
